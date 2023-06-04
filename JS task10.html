@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <script>
+    function concatStrings() {
+      var str1 = document.getElementById("string1").value;
+      var str2 = document.getElementById("string2").value;
+      
+      var concatenatedString = str1.concat(str2);
+      
+      document.getElementById("result").textContent = concatenatedString;
+    }
+  </script>
+</head>
+<body>
+  <input type="text" id="string1" placeholder="Enter string 1"><br>
+  <input type="text" id="string2" placeholder="Enter string 2"><br>
+  <button onclick="concatStrings()">Concatenate</button>
+  <p id="result"></p>
+</body>
+</html>
+
